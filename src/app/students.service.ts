@@ -59,4 +59,14 @@ export class StudentsService {
   getAllStudents() {
     return [...mockStudents];
   }
+
+  addStudent(student: Student, students: Student[]) {
+    let lastId = students[students.length - 1]?.id;
+    let nextId = 0;
+    if (lastId) {
+      nextId = Number(lastId) + 1;
+    }
+    students.push({ id: String(nextId), ...student });
+    return students;
+  }
 }

@@ -13,6 +13,7 @@ export class AppComponent {
       icon: 'home',
     },
     { title: 'Roster', url: '/roster', icon: 'people' },
+    { title: 'AppForm', url: '/app-form', icon: 'people' },
   ];
 
   constructor() {}

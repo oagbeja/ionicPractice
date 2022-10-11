@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>AppForm</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="form-horizontal" role="form" #catForm="ngForm" method="post" action="#" (ngSubmit)="onSubmit(catForm)"  >
+    <ion-input name="firstName" (ionChange)="onChangeFirstInput($event?.target?.value)" placeholder="Enter First name" ngModel ></ion-input>
+    <ion-input name="lastName" placeholder="Enter Last Name" ngModel></ion-input>
+    <div>{{inputVariable}}</div>
+    <ion-button (click)="onSubmit(catForm)">Submit</ion-button>
+  </form>
+<ul>
+  <li *ngFor="let student of students">{{student.firstName}}  {{student.lastName}}</li>
+</ul>
+</ion-content>
+

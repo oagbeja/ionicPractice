@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'roster',
     loadChildren: () => import('./roster/roster.module').then( m => m.RosterPageModule)
   },
+  {
+    path: 'app-form',
+    loadChildren: () => import('./app-form/app-form.module').then( m => m.AppFormPageModule)
+  },
 ];
 
 @NgModule({

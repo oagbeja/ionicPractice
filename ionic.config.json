@@ -1,0 +1,7 @@
+{
+  "name": "PreacticeIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

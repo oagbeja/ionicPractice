@@ -91,8 +91,10 @@ export class RosterPage implements OnInit {
 
     const toast = await this.toastController.create({
       message: `${student.firstName} ${student.lastName} has been deleted`,
-      position: 'bottom',
-      duration: 3000,
+      position: 'middle',
+      duration: 5000,
+      color: 'primary',
+      buttons: [{ text: 'X', role: 'cancel' }],
     });
     await toast.present();
   }
